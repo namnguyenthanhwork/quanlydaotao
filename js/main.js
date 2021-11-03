@@ -1,3 +1,21 @@
+$(function () {
+    'use strict';
+    //===== Prealoder
+    window.addEventListener("load", () => {
+        document.body.classList.add("loaded");
+    });
+    //===== Sticky
+
+    $(window).on('scroll', function (event) {
+        var scroll = $(window).scrollTop();
+        if (scroll < 20) {
+            $(".navbar").removeClass("sticky");
+        } else {
+            $(".navbar").addClass("sticky");
+        }
+    });
+
+})
 // init cursor
 var cursors = [{
     cursor_id: "3",
@@ -18,7 +36,7 @@ var cursors = [{
 $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
-    autoplay:true,
+    autoplay: true,
     nav: false,
     dots: true,
     responsive: {

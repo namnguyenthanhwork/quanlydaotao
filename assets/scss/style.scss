@@ -20,8 +20,10 @@
     --dark-gray: #171f33;
 }
 $white: #fff;
+$primaryColor: #2b55cc;
 $bgHome: #4d79f6;
 $yellow: #f3c74d;
+$shadow: #7f89a19a;
 /* -----------------
     Global style
 -------------------- */
@@ -66,11 +68,29 @@ h6 {
     margin: 0;
     line-height: 1;
 }
-
+section {
+    padding: 50px 0;
+}
 .justify-content-center {
     justify-content: center;
 }
 /* ============ Header style ==============*/
+.sticky {
+    background-color: #0070bc;
+    -webkit-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 40px 40px;
+    transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-border-radius: 0 0 40px 40px;
+    -moz-border-radius: 0 0 40px 40px;
+    -ms-border-radius: 0 0 40px 40px;
+    -o-border-radius: 0 0 40px 40px;
+}
 .navbar {
     position: fixed;
     color: $white;
@@ -78,7 +98,11 @@ h6 {
     top: 0;
     left: 0;
     width: 100%;
-
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
     .nav-info {
         display: flex;
         align-items: center;
@@ -214,37 +238,111 @@ h6 {
 
 /*================ Notification style ===========*/
 .notification {
+    background: #ecf2f3;
+
     .headline {
         text-align: center;
         margin-bottom: 40px;
     }
+
     .title {
         position: relative;
         text-align: center;
         font-size: 25px;
         color: $yellow;
     }
+
     .title::before {
         content: "";
         position: absolute;
-        bottom: 0;
-        width: 100%;
+        bottom: -5px;
+        left: -10px;
+        width: 115%;
         height: 3px;
         background: $yellow;
     }
-
     .noti-item {
-        margin: 0 20px;
-        background-color: #848db3;
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-        overflow: hidden;
         &__inner {
-            margin-left: -8px;
-            margin-right: -8px;
+            position: relative;
+            top: 0;
+            background-color: #e5e5e5;
+
+            border-radius: 0 0 10px 10px;
+            -webkit-border-radius: 0 0 10px 10px;
+            -moz-border-radius: 0 0 10px 10px;
+            -ms-border-radius: 0 0 10px 10px;
+            -o-border-radius: 0 0 10px 10px;
+
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+
+            img {
+                border-radius: 10px 10px 0 0;
+                -webkit-border-radius: 10px 10px 0 0;
+                -moz-border-radius: 10px 10px 0 0;
+                -ms-border-radius: 10px 10px 0 0;
+                -o-border-radius: 10px 10px 0 0;
+            }
+
+            p {
+                padding: 30px 0;
+                text-align: center;
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            .noti-icon {
+                margin: -25px auto -20px;
+                text-align: center;
+            }
+
+            i {
+                text-align: center;
+                width: 50px;
+                line-height: 50px;
+                height: 50px;
+                background: $yellow;
+                border: 3px solid $white;
+                font-size: 20px;
+                color: $primaryColor;
+
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+
+                transition: all 0.3s ease;
+                -webkit-transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+                -ms-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+            }
+
+            .hover-link {
+                color: $primaryColor;
+                transition: all 0.3s ease;
+                -webkit-transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+                -ms-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+            }
+
+            .hover-link:hover {
+                color: #832d18;
+            }
+        }
+
+        &__inner:hover {
+            top: -10px;
+            box-shadow: 0 5px 10px $shadow;
+        }
+
+        &__inner:hover i {
+            background: $white;
         }
     }
 }
