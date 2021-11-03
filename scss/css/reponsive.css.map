@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "reponsive.scss"
+        "../../assets/scss/reponsive.scss"
     ],
     "names": [],
     "file": "reponsive.css"

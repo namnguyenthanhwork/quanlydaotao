@@ -18,10 +18,10 @@
     --danger: #f1646c;
     --dark-blue: #28365f;
     --dark-gray: #171f33;
-    --yellow: #f3c74d;
 }
 $white: #fff;
 $bgHome: #4d79f6;
+$yellow: #f3c74d;
 /* -----------------
     Global style
 -------------------- */
@@ -67,6 +67,9 @@ h6 {
     line-height: 1;
 }
 
+.justify-content-center {
+    justify-content: center;
+}
 /* ============ Header style ==============*/
 .navbar {
     position: fixed;
@@ -136,6 +139,7 @@ h6 {
             }
             &__link .link-item:hover .sub-items {
                 top: 35px;
+                // height: 100%;
                 transition: all 0.3s ease-in-out;
                 -webkit-transition: all 0.3s ease-in-out;
                 -moz-transition: all 0.3s ease-in-out;
@@ -167,6 +171,15 @@ h6 {
 }
 
 .home {
+    #particles-1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
     position: relative;
     z-index: 5;
     background-position: bottom center;
@@ -175,4 +188,63 @@ h6 {
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
+
+    &-left,
+    &-right {
+        padding-top: 180px;
+    }
+
+    &-left {
+        text-align: center;
+        color: $white;
+        h1 {
+            margin-bottom: 10px;
+        }
+    }
+
+    &-right__item {
+        overflow: hidden;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+}
+
+/*================ Notification style ===========*/
+.notification {
+    .headline {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .title {
+        position: relative;
+        text-align: center;
+        font-size: 25px;
+        color: $yellow;
+    }
+    .title::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        background: $yellow;
+    }
+
+    .noti-item {
+        margin: 0 20px;
+        background-color: #848db3;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        overflow: hidden;
+        &__inner {
+            margin-left: -8px;
+            margin-right: -8px;
+        }
+    }
 }
