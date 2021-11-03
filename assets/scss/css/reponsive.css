@@ -1,1 +1,45 @@
-/* No CSS *//*# sourceMappingURL=reponsive.css.map */
+@media screen and (max-width: 1199px) {
+  .home {
+    height: 80vh;
+  }
+  .home-left {
+    padding: 150px 0 20px;
+  }
+  .home-right {
+    padding: 50px 0 100px 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  section {
+    padding: 50px 0;
+  }
+  .home {
+    height: 90vh;
+  }
+  .home-right {
+    padding: 30px 0 100px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section {
+    padding: 40px 0;
+  }
+  .home-right {
+    padding: 30px 0 100px 0;
+  }
+}
+
+@media screen and (max-width: 574px) {
+  .card-inner {
+    width: 250px;
+  }
+  .home-left {
+    padding: 150px 0 0;
+  }
+  .home-right {
+    padding: 30px 0 100px 0;
+  }
+}
+/*# sourceMappingURL=reponsive.css.map */

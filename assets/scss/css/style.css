@@ -299,6 +299,7 @@ section {
   position: relative;
   top: 0;
   background-color: #e5e5e5;
+  margin: 0 auto 30px;
   border-radius: 0 0 10px 10px;
   -webkit-border-radius: 0 0 10px 10px;
   -moz-border-radius: 0 0 10px 10px;
@@ -372,5 +373,35 @@ section {
 
 .notification .card-inner:hover i {
   background: #fff;
+}
+
+/*===== BACK TO TOP =====*/
+.back-to-top {
+  font-size: 20px;
+  color: #fff;
+  position: fixed;
+  right: 33px;
+  bottom: 100px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(#361cc1), to(#2e82ef));
+  background: linear-gradient(to right, #361cc1 0%, #2e82ef 100%);
+  text-align: center;
+  z-index: 99;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  display: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.back-to-top:hover {
+  color: #fff;
+  background: -webkit-gradient(linear, right top, left top, from(#361cc1), to(#2e82ef));
+  background: linear-gradient(to left, #361cc1 0%, #2e82ef 100%);
 }
 /*# sourceMappingURL=style.css.map */
