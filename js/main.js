@@ -22,6 +22,45 @@ $(function () {
             $('.back-to-top').fadeOut(200)
         }
     });
+
+
+    $('.banner-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        nav: false,
+        dots: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            }
+        }
+    })
+
+    $('.linked-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        nav: false,
+        dots: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            575: {
+                items: 2
+            },
+            768: {
+                items: 3
+            },
+            992: {
+                items: 4
+            }
+        }
+    })
 })
 // init cursor
 var cursors = [{
@@ -39,22 +78,6 @@ var cursors = [{
     width: "30",
     blending_mode: "normal"
 }];
-
-$('.owl-carousel').owlCarousel({
-    loop: true,
-    margin: 10,
-    autoplay: true,
-    nav: false,
-    dots: true,
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 1
-        }
-    }
-})
 
 if (document.getElementById("particles-1")) particlesJS("particles-1", {
     "particles": {
