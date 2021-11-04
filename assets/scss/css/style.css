@@ -1,24 +1,6 @@
 /* Font */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
 /* define custom css variables */
-:root {
-  --primary: #1a253f;
-  --secondary: #2b55cc;
-  --dark: #151a33;
-  --info: #4d79f6;
-  --termary: #848db3;
-  --pure: #eff2f9;
-  --mild: #8997bd;
-  --fade: #7081b9;
-  --footer: #212a4a;
-  --black: #060b1b;
-  --dribbble: #cd0a5b;
-  --success: #1ecab8;
-  --danger: #f1646c;
-  --dark-blue: #28365f;
-  --dark-gray: #171f33;
-}
-
 /* -----------------
     Global style
 -------------------- */
@@ -37,8 +19,9 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: var(--pure);
+  background: #eff2f9;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 ul li {
@@ -320,11 +303,11 @@ section {
   top: 0;
   background-color: #e5e5e5;
   margin: 0 auto 30px;
-  border-radius: 0 0 10px 10px;
-  -webkit-border-radius: 0 0 10px 10px;
-  -moz-border-radius: 0 0 10px 10px;
-  -ms-border-radius: 0 0 10px 10px;
-  -o-border-radius: 0 0 10px 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -341,7 +324,7 @@ section {
 }
 
 .notification .card-inner p {
-  padding: 30px 0;
+  padding: 30px 10px;
   text-align: center;
   font-size: 18px;
   font-weight: 600;
@@ -407,6 +390,7 @@ section {
 .resource .card-inner {
   position: relative;
   top: 0;
+  z-index: 1;
   border: 1px solid #2e82ef;
   width: 100%;
   padding: 20px 15px;
@@ -471,6 +455,96 @@ section {
 
 .resource .card-inner .hover-link:hover {
   color: #f3c74d;
+}
+
+/* ============= Linked style ================*/
+.linked .link-item {
+  width: 250px;
+}
+
+.linked .link-item .card-inner {
+  text-align: center;
+  border: 2px solid #4d79f6;
+  padding: 10px;
+  height: 250px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.linked .link-item .card-inner img {
+  width: 80%;
+  padding: 10px;
+  margin: auto;
+}
+
+.linked .link-item .card-inner p {
+  padding: 20px 0;
+}
+
+.linked .link-item .card-inner:hover {
+  -webkit-box-shadow: 0 5px 10px #7f89a19a;
+          box-shadow: 0 5px 10px #7f89a19a;
+  border: 2px solid #f3c74d;
+}
+
+.background-section {
+  background-image: url(/assets/images/homepage/section_bg1.png.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ============= Footer style ================*/
+.footer {
+  position: relative;
+  z-index: 5;
+  color: #fff;
+}
+
+.footer #particles-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.footer-content {
+  padding: 250px 0 50px;
+}
+
+.footer-content h2 {
+  padding: 25px 0;
+}
+
+.footer-content li {
+  padding: 5px 0;
+}
+
+.footer-content li a {
+  color: #fff;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+.footer-content li a:hover {
+  color: #f3c74d;
+}
+
+.footer .copy-right {
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
 }
 
 /*===== BACK TO TOP =====*/

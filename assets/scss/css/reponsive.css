@@ -8,6 +8,9 @@
   .home-right {
     padding: 50px 0 100px 0;
   }
+  .linked .link-item {
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -20,6 +23,12 @@
   .home-right {
     padding: 30px 0 100px 0;
   }
+  .linked .link-item {
+    width: 210px;
+  }
+  .footer-content {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -28,6 +37,9 @@
   }
   .home-right {
     padding: 30px 0 100px 0;
+  }
+  .linked .link-item {
+    width: 240px;
   }
 }
 
@@ -40,6 +52,10 @@
   }
   .home-right {
     padding: 30px 0 100px 0;
+  }
+  .linked .link-item {
+    width: 250px;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=reponsive.css.map */

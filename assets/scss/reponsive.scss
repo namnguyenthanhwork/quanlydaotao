@@ -13,6 +13,12 @@
             padding: 50px 0 100px 0;
         }
     }
+
+    .linked {
+        .link-item {
+            width: 200px;
+        }
+    }
 }
 
 // tablet
@@ -27,6 +33,18 @@
             padding: 30px 0 100px 0;
         }
     }
+
+    .linked {
+        .link-item {
+            width: 210px;
+        }
+    }
+
+    .footer {
+        &-content {
+            text-align: center;
+        }
+    }
 }
 
 // tablet
@@ -37,6 +55,12 @@
     .home {
         &-right {
             padding: 30px 0 100px 0;
+        }
+    }
+
+    .linked {
+        .link-item {
+            width: 240px;
         }
     }
 }
@@ -55,6 +79,13 @@
 
         &-right {
             padding: 30px 0 100px 0;
+        }
+    }
+
+    .linked {
+        .link-item {
+            width: 250px;
+            margin: auto;
         }
     }
 }
