@@ -1,13 +1,12 @@
 @media screen and (min-width: 1200px) {
   .wrapper nav {
     max-width: 100%;
-    padding: 0 20px;
   }
   .wrapper nav .content .links {
     margin-left: 30px;
   }
   .wrapper nav .content .links li a {
-    padding: 8px 13px;
+    padding: 10px;
   }
 }
 
@@ -21,20 +20,23 @@
   nav .content .links {
     display: block;
     position: fixed;
-    background: #14181f;
+    background: #361cc1;
     height: 100%;
     width: 100%;
     top: 70px;
-    left: -100%;
+    right: -100%;
     margin-left: 0;
-    max-width: 350px;
+    max-width: 310px;
     overflow-y: auto;
     padding-bottom: 100px;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
   }
   nav #show-menu:checked ~ .content .links {
-    left: 0%;
+    right: 0%;
   }
   .content .links li {
     margin: 15px 20px;
@@ -50,7 +52,9 @@
   .content .links li a.desktop-link {
     display: none;
   }
-  /* dropdown responsive code start */
+  .content .links li i {
+    margin-left: 8px;
+  }
   .content .links ul,
   .content .links ul ul {
     position: static;
@@ -60,10 +64,13 @@
     max-height: 0px;
     overflow: hidden;
   }
-  .content .links #show-features:checked ~ ul,
-  .content .links #show-services:checked ~ ul,
-  .content .links #show-items:checked ~ ul {
+  .content .links #show-contacts:checked ~ ul,
+  .content .links #show-ctdt:checked ~ ul {
     max-height: 100vh;
+  }
+  .content .links #show-contacts:checked ~ label .fa-angle-down::before,
+  .content .links #show-ctdt:checked ~ label .fa-angle-down::before {
+    content: "\f106";
   }
   .content .links ul li {
     margin: 7px 20px;
@@ -72,9 +79,7 @@
     font-size: 18px;
     line-height: 30px;
     border-radius: 5px !important;
-  }
-  .home {
-    height: 80vh;
+    color: #fff;
   }
   .home-left {
     padding: 150px 0 20px;

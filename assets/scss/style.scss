@@ -6,6 +6,7 @@ $white: #fff;
 $pure: #eff2f9;
 $primaryColor: #2b55cc;
 $bgHome: #4d79f6;
+$navColor: #361cc1;
 $yellow: #f3c74d;
 $shadow: #7f89a19a;
 $red: #cd0a5b;
@@ -66,25 +67,9 @@ section {
     justify-content: space-evenly;
 }
 /* ============ Header style ==============*/
-.sticky {
-    background-color: #0070bc;
-    -webkit-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 0 0 40px 40px;
-    transition: all 0.2s ease-out;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    -webkit-border-radius: 0 0 40px 40px;
-    -moz-border-radius: 0 0 40px 40px;
-    -ms-border-radius: 0 0 40px 40px;
-    -o-border-radius: 0 0 40px 40px;
-}
-
 .wrapper {
-    background: #171c24;
+    background: $navColor;
+
     position: fixed;
     width: 100%;
     z-index: 9999;
@@ -92,7 +77,8 @@ section {
     nav {
         position: relative;
         display: flex;
-        max-width: calc(100% - 200px);
+
+        flex-direction: row-reverse;
         margin: 0 auto;
         height: 70px;
         align-items: center;
@@ -101,11 +87,19 @@ section {
         .content {
             display: flex;
             align-items: center;
+            width: 100%;
+            justify-content: space-between;
 
-            .logo a {
-                color: #fff;
-                font-size: 30px;
-                font-weight: 600;
+            .logo {
+                a {
+                    color: $white;
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+
+                img {
+                    width: 260px;
+                }
             }
         }
 
@@ -113,13 +107,12 @@ section {
             display: flex;
 
             li {
-                list-style: none;
                 line-height: 70px;
             }
 
             a,
             label {
-                color: #fff;
+                color: $white;
                 font-size: 18px;
                 font-weight: 500;
                 padding: 9px 17px;
@@ -133,12 +126,18 @@ section {
 
             a:hover,
             label:hover {
-                background: #323c4e;
+                color: $yellow;
+            }
+            .desktop-link {
+                i {
+                    display: inline-block;
+                    margin-left: 5px;
+                }
             }
         }
     }
     .menu-icon {
-        color: #fff;
+        color: $white;
         font-size: 18px;
         cursor: pointer;
         line-height: 70px;
@@ -158,35 +157,61 @@ section {
     .links {
         ul {
             position: absolute;
-            background: #171c24;
+            background: $white;
+            border-radius: 0 0 5px 5px;
+            -webkit-border-radius: 0 0 5px 5px;
+            -moz-border-radius: 0 0 5px 5px;
+            -ms-border-radius: 0 0 5px 5px;
+            -o-border-radius: 0 0 5px 5px;
             top: 80px;
             z-index: -1;
             opacity: 0;
             visibility: hidden;
-
             li a {
                 display: block;
+                color: $primaryColor;
                 width: 100%;
                 line-height: 30px;
                 border-radius: 0px !important;
             }
+
             ul {
                 position: absolute;
                 top: 0;
                 right: calc(-100% + 8px);
             }
+
             li {
                 position: relative;
+                transition: all 0.3s ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
             }
-            li:hover ul {
-                top: 0;
+
+            li:hover a {
+                color: $white;
+                background: $primaryColor;
+            }
+
+        }
+        li:hover {
+            > ul {
+                top: 70px;
+                opacity: 1;
+                visibility: visible;
+                transition: all 0.3s ease;
+            }
+            .desktop-link {
+                .fa-angle-down::before {
+                    content: "\f106";
+                }
             }
         }
-        li:hover > ul {
-            top: 70px;
-            opacity: 1;
-            visibility: visible;
-            transition: all 0.3s ease;
+
+        .contacts {
+            width: 170px;
         }
     }
 }
@@ -536,7 +561,7 @@ section {
 /*===== BACK TO TOP =====*/
 .back-to-top {
     font-size: 20px;
-    color: #fff;
+    color: $white;
     position: fixed;
     right: 33px;
     bottom: 100px;
@@ -562,6 +587,6 @@ section {
 }
 
 .back-to-top:hover {
-    color: #fff;
+    color: $white;
     background: linear-gradient(to left, #361cc1 0%, #2e82ef 100%);
 }

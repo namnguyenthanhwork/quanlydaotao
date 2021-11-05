@@ -1,12 +1,23 @@
+$white: #fff;
+$pure: #eff2f9;
+$primaryColor: #2b55cc;
+$bgHome: #4d79f6;
+$navColor: #361cc1;
+$yellow: #f3c74d;
+$shadow: #7f89a19a;
+$red: #cd0a5b;
+$headline-font: 24px;
+
 @media screen and (min-width: 1200px) {
     .wrapper {
         nav {
             max-width: 100%;
-            padding: 0 20px;
+
             .content .links {
                 margin-left: 30px;
+
                 li a {
-                    padding: 8px 13px;
+                    padding: 10px;
                 }
             }
         }
@@ -15,78 +26,98 @@
 
 // low pc, laptop
 @media screen and (max-width: 1199px) {
-    .wrapper .menu-icon {
-        display: block;
+    .wrapper {
+        .menu-icon {
+            display: block;
+        }
+
+        #show-menu:checked ~ .menu-icon i::before {
+            content: "\f00d";
+        }
     }
 
-    .wrapper #show-menu:checked ~ .menu-icon i::before {
-        content: "\f00d";
+    nav {
+        .content .links {
+            display: block;
+            position: fixed;
+            background: $navColor;
+            height: 100%;
+            width: 100%;
+            top: 70px;
+            right: -100%;
+            margin-left: 0;
+            max-width: 310px;
+            overflow-y: auto;
+            padding-bottom: 100px;
+            transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+        }
+        #show-menu:checked ~ .content .links {
+            right: 0%;
+        }
     }
 
-    nav .content .links {
-        display: block;
-        position: fixed;
-        background: #14181f;
-        height: 100%;
-        width: 100%;
-        top: 70px;
-        left: -100%;
-        margin-left: 0;
-        max-width: 350px;
-        overflow-y: auto;
-        padding-bottom: 100px;
-        transition: all 0.3s ease;
+    .content {
+        .links {
+            li {
+                margin: 15px 20px;
+
+                a,
+                label {
+                    line-height: 40px;
+                    font-size: 20px;
+                    display: block;
+                    padding: 8px 18px;
+                    cursor: pointer;
+                }
+
+                a.desktop-link {
+                    display: none;
+                }
+
+                i {
+                    margin-left: 8px;
+                }
+            }
+
+            // dropdown responsive code start
+            ul,
+            ul ul {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                background: none;
+                max-height: 0px;
+                overflow: hidden;
+            }
+
+            #show-contacts:checked ~ ul,
+            #show-ctdt:checked ~ ul {
+                max-height: 100vh;
+            }
+
+            #show-contacts:checked ~ label .fa-angle-down::before,
+            #show-ctdt:checked ~ label .fa-angle-down::before {
+                content: "\f106";
+            }
+
+            ul li {
+                margin: 7px 20px;
+            }
+
+            ul li a {
+                font-size: 18px;
+                line-height: 30px;
+                border-radius: 5px !important;
+                color: $white;
+            }
+        }
     }
 
-    nav #show-menu:checked ~ .content .links {
-        left: 0%;
-    }
-
-    .content .links li {
-        margin: 15px 20px;
-    }
-
-    .content .links li a,
-    .content .links li label {
-        line-height: 40px;
-        font-size: 20px;
-        display: block;
-        padding: 8px 18px;
-        cursor: pointer;
-    }
-
-    .content .links li a.desktop-link {
-        display: none;
-    }
-
-    /* dropdown responsive code start */
-    .content .links ul,
-    .content .links ul ul {
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        background: none;
-        max-height: 0px;
-        overflow: hidden;
-    }
-
-    .content .links #show-features:checked ~ ul,
-    .content .links #show-services:checked ~ ul,
-    .content .links #show-items:checked ~ ul {
-        max-height: 100vh;
-    }
-
-    .content .links ul li {
-        margin: 7px 20px;
-    }
-
-    .content .links ul li a {
-        font-size: 18px;
-        line-height: 30px;
-        border-radius: 5px !important;
-    }
     .home {
-        height: 80vh;
         &-left {
             padding: 150px 0 20px;
         }

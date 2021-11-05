@@ -4,16 +4,7 @@ $(function () {
     window.addEventListener("load", () => {
         document.body.classList.add("loaded");
     });
-    //===== Sticky
 
-    $(window).on('scroll', function (event) {
-        var scroll = $(window).scrollTop();
-        if (scroll < 20) {
-            $(".navbar").removeClass("sticky");
-        } else {
-            $(".navbar").addClass("sticky");
-        }
-    });
     // Show or hide the sticky footer button
     $(window).on('scroll', function (event) {
         if ($(this).scrollTop() > 600) {
@@ -46,7 +37,7 @@ $(function () {
         autoplay: true,
         nav: false,
         dots: false,
-        autoplayTimeout:2000,
+        autoplayTimeout: 2000,
         responsive: {
             0: {
                 items: 1
