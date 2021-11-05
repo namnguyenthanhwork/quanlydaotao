@@ -1,4 +1,78 @@
+@media screen and (min-width: 1200px) {
+  .wrapper nav {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  .wrapper nav .content .links {
+    margin-left: 30px;
+  }
+  .wrapper nav .content .links li a {
+    padding: 8px 13px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
+  .wrapper .menu-icon {
+    display: block;
+  }
+  .wrapper #show-menu:checked ~ .menu-icon i::before {
+    content: "\f00d";
+  }
+  nav .content .links {
+    display: block;
+    position: fixed;
+    background: #14181f;
+    height: 100%;
+    width: 100%;
+    top: 70px;
+    left: -100%;
+    margin-left: 0;
+    max-width: 350px;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  nav #show-menu:checked ~ .content .links {
+    left: 0%;
+  }
+  .content .links li {
+    margin: 15px 20px;
+  }
+  .content .links li a,
+  .content .links li label {
+    line-height: 40px;
+    font-size: 20px;
+    display: block;
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+  .content .links li a.desktop-link {
+    display: none;
+  }
+  /* dropdown responsive code start */
+  .content .links ul,
+  .content .links ul ul {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .content .links #show-features:checked ~ ul,
+  .content .links #show-services:checked ~ ul,
+  .content .links #show-items:checked ~ ul {
+    max-height: 100vh;
+  }
+  .content .links ul li {
+    margin: 7px 20px;
+  }
+  .content .links ul li a {
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 5px !important;
+  }
   .home {
     height: 80vh;
   }
@@ -44,6 +118,12 @@
 }
 
 @media screen and (max-width: 574px) {
+  .wrapper nav {
+    padding: 0 10px;
+  }
+  .content .logo a {
+    font-size: 27px;
+  }
   .card-inner {
     width: 250px;
   }

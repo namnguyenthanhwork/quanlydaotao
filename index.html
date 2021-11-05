@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url" content="https://quanlydaotao.ou.edu.vn/l" />
+    <meta property="og:url" content="https://quanlydaotao.ou.edu.vn/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Phòng QLĐT" />
+    <meta property="og:title" content="Phòng Quản Lý Đào Tạo" />
     <meta property="og:description" content="Tổng hợp các thông tin của phòng QLĐT" />
     <meta property="og:image"
         content="http://ou.edu.vn/wp-content/uploads/2018/08/LOGO-TRUONGV21-12-2018-01-300x300.png" />
-    <title>Website Phòng QLĐT</title>
+    <title>Phòng Quản Lý Đào Tạo</title>
 
     <!-- Reset CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
@@ -45,45 +45,43 @@
     <!-- Header start -->
     <header id="header">
         <!-- Navbar start -->
-        <nav class="navbar">
-            <div class="nav-info container">
-                <div class="nav-left">
-                    <img src="./assets/images/favicon/logo.png" alt="logo ou">
-                </div>
-
-                <div class="nav-right">
-                    <ul class="nav-right__link">
-                        <li class="link-item">
-                            <a href="javascript:;">Thông tin liên hệ <i class="fas fa-angle-down"></i></a>
-                            <ul class="sub-items">
-                                <li><a href="javascript:;">Giới thiệu</a></li>
-                                <li><a href="javascript:;">Biểu mẫu</a></li>
-                                <li><a href="javascript:;">Nhân sự</a></li>
-                                <li><a href="javascript:;">Văn bản</a></li>
+        <div class="wrapper">
+            <nav>
+                <input type="checkbox" id="show-menu">
+                <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                <div class="content">
+                    <div class="logo"><a href="#"><img src="./assets/images/favicon/logo.png" alt="logo ou"
+                                style="width: 200px;"></a></div>
+                    <ul class="links">
+                        <li>
+                            <a href="#" class="desktop-link">Thông tin liên hệ</a>
+                            <input type="checkbox" id="show-features">
+                            <label for="show-features">Thông tin liên hệ</label>
+                            <ul>
+                                <li><a href="#">Giới thiệu</a></li>
+                                <li><a href="#">Biểu mẫu</a></li>
+                                <li><a href="#">Nhân sự</a></li>
+                                <li><a href="#">Văn bản</a></li>
                             </ul>
                         </li>
-                        <li class="link-item"><a href="javascript:;">Quy chế - Quy định</a></li>
-                        <li class="link-item"><a href="javascript:;">Chuẩn đầu ra</a></li>
-                        <li class="link-item">
-                            <a href="javascript:;">Chương trình đào tạo <i class="fas fa-angle-down"></i></a>
-                            <ul class="sub-items sub-items-faculty">
-                                <li><a href="javascript:;">Khoa Công Nghệ Thông Tin</a></li>
-                                <li><a href="javascript:;">Khoa Công Nghệ Sinh Học</a></li>
-                                <li><a href="javascript:;">Khoa Kế Toán - Kiểm Toán</a></li>
-                                <li><a href="javascript:;">Khoa Kinh Tế - Quản Lý Công</a></li>
-                                <li><a href="javascript:;">Khoa Luật</a></li>
-                                <li><a href="javascript:;">Khoa Ngoại Ngữ</a></li>
-                                <li><a href="javascript:;">Khoa Quản Trị Kinh Doanh</a></li>
-                                <li><a href="javascript:;">Khoa Tài Chính - Ngân Hàng</a></li>
-                                <li><a href="javascript:;">Khoa Xây Dựng</a></li>
-                                <li><a href="javascript:;">Khoa XHH - CTXH - DNA</a></li>
+                        <li><a href="#">Quy chế - Quy định</a></li>
+                        <li><a href="#">Chuẩn đầu ra</a></li>
+                        <li>
+                            <a href="#" class="desktop-link">Chương trình đào tạo</a>
+                            <input type="checkbox" id="show-services">
+                            <label for="show-services">Chương trình đào tạo</label>
+                            <ul>
+                                <li><a href="#">Drop Menu 1</a></li>
+                                <li><a href="#">Drop Menu 2</a></li>
+                                <li><a href="#">Drop Menu 3</a></li>
                             </ul>
                         </li>
-                        <li class="link-item"><a href="javascript:;">Kết quả khảo sát</a></li>
+                        <li><a href="#">Kết quả khảo sát</a></li>
                     </ul>
                 </div>
-            </div>
-        </nav>
+
+            </nav>
+        </div>
         <!-- Navbar end -->
 
         <!-- Home start -->
