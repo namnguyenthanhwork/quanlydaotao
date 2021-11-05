@@ -19,7 +19,7 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: #eff2f9;
+  background: #fff;
   font-size: 16px;
 }
 
@@ -326,7 +326,7 @@ section {
 
 /*================ Notification style ===========*/
 .notification {
-  background: #eff2f9;
+  background: #fff;
 }
 
 .notification .card {
