@@ -18,17 +18,17 @@
     content: "\f00d";
   }
   nav .content .links {
-    display: block;
     position: fixed;
-    background: #361cc1;
-    height: 100%;
-    width: 100%;
     top: 70px;
     right: -100%;
-    margin-left: 0;
-    max-width: 310px;
+    display: block;
     overflow-y: auto;
+    max-width: 310px;
+    width: 100%;
+    height: 100%;
     padding-bottom: 100px;
+    margin-left: 0;
+    background: #361cc1;
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -43,9 +43,9 @@
   }
   .content .links li a,
   .content .links li label {
-    line-height: 40px;
-    font-size: 20px;
     display: block;
+    line-height: 40px;
+    font-size: 17px;
     padding: 8px 18px;
     cursor: pointer;
   }
@@ -76,10 +76,17 @@
     margin: 7px 20px;
   }
   .content .links ul li a {
-    font-size: 18px;
+    color: #fff;
+    font-size: 17px;
     line-height: 30px;
     border-radius: 5px !important;
-    color: #fff;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    -ms-border-radius: 5px !important;
+    -o-border-radius: 5px !important;
+  }
+  .home {
+    height: 80vh;
   }
   .home-left {
     padding: 150px 0 20px;
@@ -102,6 +109,21 @@
   .home-right {
     padding: 30px 0 100px 0;
   }
+  .notification .card-inner p {
+    font-size: 17px;
+  }
+  .notification .card-inner i {
+    width: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+  }
+  .headline i {
+    font-size: 23px;
+  }
+  .headline .title {
+    font-size: 23px;
+  }
   .linked .link-item {
     width: 210px;
   }
@@ -123,24 +145,59 @@
 }
 
 @media screen and (max-width: 574px) {
+  body {
+    font-size: 14px;
+  }
   .wrapper nav {
     padding: 0 10px;
+  }
+  .wrapper nav .content .links {
+    max-width: 250px;
   }
   .content .logo a {
     font-size: 27px;
   }
-  .card-inner {
-    width: 250px;
+  .content .links li a,
+  .content .links li label {
+    font-size: 14px;
+  }
+  .content .links ul li a {
+    font-size: 14px;
+  }
+  .notification .card-inner p {
+    font-size: 14px;
+    padding: 30px 10px 20px;
+  }
+  .home {
+    height: 80vh;
   }
   .home-left {
-    padding: 150px 0 0;
+    padding: 100px 0 0;
+  }
+  .home-left h1 {
+    font-size: 20px;
   }
   .home-right {
     padding: 30px 0 100px 0;
   }
   .linked .link-item {
-    width: 250px;
+    width: 240px;
     margin: auto;
+  }
+  .linked .link-item .card-inner {
+    height: 225px;
+  }
+  .linked .link-item .card-inner img {
+    width: 70%;
+  }
+  .headline i {
+    font-size: 22px;
+  }
+  .headline .title {
+    font-size: 23px;
+  }
+  .footer .title-footer {
+    font-size: 22px;
   }
 }
 /*# sourceMappingURL=reponsive.css.map */

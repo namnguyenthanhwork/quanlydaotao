@@ -566,6 +566,10 @@ col-gy-[x] | x \in {10, 30} margin bottom (px)
         width: 100%;
     }
 
+    .row {
+        margin: unset;
+    }
+
     .xs-0 {
         display: none;
     }
@@ -583,6 +587,7 @@ col-gy-[x] | x \in {10, 30} margin bottom (px)
     .xs-11,
     .xs-12 {
         display: block;
+        padding: unset;
     }
 
     .xs-1 {
