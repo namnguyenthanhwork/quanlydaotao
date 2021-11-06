@@ -3,13 +3,15 @@
 
 /* define custom css variables */
 $white: #fff;
-$pure: #eff2f9;
+$pure: #e2e2e2;
 $primaryColor: #2b55cc;
 $bgHome: #4d79f6;
 $navColor: #361cc1;
 $yellow: #f3c74d;
 $shadow: #7f89a19a;
 $red: #cd0a5b;
+$cyan: #17a2b8;
+$danger: #dc3545;
 
 /* -----------------
     Global style
@@ -70,13 +72,17 @@ section {
     justify-content: space-evenly;
 }
 
+.text-justify {
+    text-align: left !important;
+}
+
 /* ============ Header style ==============*/
 .wrapper {
     background: $navColor;
 
     position: fixed;
     width: 100%;
-    z-index: 9999;
+    z-index: 999;
 
     nav {
         position: relative;
@@ -383,30 +389,30 @@ section {
             .card-icon {
                 margin: -25px auto -20px;
                 text-align: center;
-            }
 
-            i {
-                text-align: center;
-                font-size: 20px;
+                i {
+                    text-align: center;
+                    font-size: 20px;
 
-                width: 50px;
-                line-height: 50px;
-                height: 50px;
+                    width: 50px;
+                    line-height: 50px;
+                    height: 50px;
 
-                background: $yellow;
-                color: $primaryColor;
+                    background: $yellow;
+                    color: $primaryColor;
 
-                border-radius: 50%;
-                -webkit-border-radius: 50%;
-                -moz-border-radius: 50%;
-                -ms-border-radius: 50%;
-                -o-border-radius: 50%;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
 
-                transition: all 0.3s ease;
-                -webkit-transition: all 0.3s ease;
-                -moz-transition: all 0.3s ease;
-                -ms-transition: all 0.3s ease;
-                -o-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+                    -webkit-transition: all 0.3s ease;
+                    -moz-transition: all 0.3s ease;
+                    -ms-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+                }
             }
 
             .hover-link {
@@ -421,6 +427,15 @@ section {
             .hover-link:hover {
                 color: #832d18;
             }
+
+            span {
+                margin: -15px 0 20px 0;
+                display: block;
+
+                i {
+                    margin: 0 5px 0 15px;
+                }
+            }
         }
 
         &-inner:hover {
@@ -428,8 +443,10 @@ section {
             box-shadow: 0 5px 10px $shadow;
         }
 
-        &-inner:hover i {
-            background: $white;
+        &-inner:hover .card-icon {
+            i {
+                background: $white;
+            }
         }
     }
 }
@@ -469,6 +486,11 @@ section {
                 padding: 10px 0;
                 font-weight: 600;
             }
+
+            .img-fluid {
+                width: 60px;
+                height: 60px;
+            }
         }
 
         &-inner::before {
@@ -496,7 +518,7 @@ section {
         }
 
         &-inner:hover::before {
-            background: $primaryColor;
+            background: $bgHome;
             top: 0;
         }
 
@@ -604,6 +626,48 @@ section {
         padding: 20px;
         font-weight: bold;
     }
+}
+
+/*===== Pagination =====*/
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pagination-item {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+
+    text-align: center;
+    margin: 30px 0 0 15px;
+
+    color: #fff !important;
+    background: $cyan;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-border-radius: 50;
+}
+
+.pagination-item:hover {
+    background: $danger;
+}
+
+.pagination-item.active {
+    background: $danger;
 }
 
 /*===== BACK TO TOP =====*/
