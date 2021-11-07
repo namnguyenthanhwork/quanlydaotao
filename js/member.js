@@ -19,80 +19,80 @@ let member = [{
     {
         name: 'Nguyễn Phương Anh',
         image: './assets/images/member/nguyenphuonganh.jpg',
-        mail: 'Chuyên viên',
-        employee: 'anh.np@ou.edu.vn'
+        mail: 'anh.np@ou.edu.vn',
+        employee: 'Chuyên viên'
     },
     {
         name: 'Phạm Minh Dzu',
         image: './assets/images/member/phamminhdzu.png',
-        mail: 'Chuyên viên',
-        employee: 'dzu.pm@ou.edu.vn'
+        mail: 'dzu.pm@ou.edu.vn',
+        employee: 'Chuyên viên'
     },
     {
         name: 'Đỗ Đại Dương',
         image: './assets/images/member/logo.png',
-        mail: 'Chuyên viên',
-        employee: 'duong.dd@ou.edu.vn'
+        mail: 'duong.dd@ou.edu.vn',
+        employee: 'Chuyên viên'
     },
     {
         name: 'Phùng Thị Kim Ngọc',
         image: './assets/images/member/phungthikimngoc.jpg',
-        mail: 'Chuyên viên',
-        employee: 'ngoc.ptk@ou.edu.vn'
+        mail: 'ngoc.ptk@ou.edu.vn',
+        employee: 'Chuyên viên'
     },
     {
         name: 'Trần Thị Thúy Hằng',
         image: './assets/images/member/tranthithuyhang.png',
-        mail: 'Chuyên viên',
-        employee: 'hang.ttht@ou.edu.vn'
+        mail: 'hang.ttht@ou.edu.vn',
+        employee: 'Chuyên viên'
     },
     {
         name: 'Nguyễn Phi Hùng',
         image: './assets/images/member/nguyenphihung.jpg',
-        mail: 'Chuyên viên',
-        employee: 'hung.np@ou.edu.vn'
+        mail: 'hung.np@ou.edu.vn',
+        employee: 'Chuyên viên'
     },
     {
         name: 'Nguyễn Thanh Hùng',
         image: './assets/images/member/logo.png',
-        mail: 'Chuyên viên',
-        employee: 'hung.nt@ou.edu.vn'
+        mail: 'hung.nt@ou.edu.vn',
+        employee: 'Chuyên viên'
     },
     {
         name: 'Nguyễn Thị Ngọc Loan',
         image: './assets/images/member/nguyenthingocloan.png',
-        mail: 'Chuyên viên',
-        employee: 'loan.ntn@ou.edu.vn'
+        mail: 'loan.ntn@ou.edu.vn',
+        employee: 'Chuyên viên'
     },
     {
         name: 'Cao Thị Hà Phương',
         image: './assets/images/member/caothihaphuong.png',
-        mail: 'Chuyên viên',
-        employee: 'phuong.cth@ou.edu.vn'
+        mail: 'phuong.cth@ou.edu.vn',
+        employee: 'Chuyên viên'
     },
     {
         name: 'Trần Thị Lệ Quyên',
         image: './assets/images/member/tranthilequyen.png',
-        mail: 'Chuyên viên',
-        employee: 'quyen.ttl@ou.edu.vn'
+        mail: 'quyen.ttl@ou.edu.vn',
+        employee: 'Chuyên viên'
     },
     {
         name: 'Nguyễn Minh Trí',
         image: './assets/images/member/nguyenminhtri.png',
-        mail: 'Chuyên viên',
-        employee: 'tri.nm@ou.edu.vn'
+        mail: 'tri.nm@ou.edu.vn',
+        employee: 'Chuyên viên'
     },
     {
         name: 'Vũ Thị Thanh Trúc',
         image: './assets/images/member/vuthithanhtruc.png',
-        mail: 'Chuyên viên',
-        employee: 'truc.vtt@ou.edu.vn'
+        mail: 'truc.vtt@ou.edu.vn',
+        employee: 'Chuyên viên'
     },
     {
         name: 'Nguyễn Huỳnh Vũ Duy',
         image: './assets/images/member/logo.png',
-        mail: 'Chuyên viên',
-        employee: 'duy.nhv@ou.edu.vn'
+        mail: 'duy.nhv@ou.edu.vn',
+        employee: 'Chuyên viên'
     }
 ]
 
