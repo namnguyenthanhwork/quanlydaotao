@@ -617,7 +617,7 @@ section {
       flex-wrap: wrap;
 }
 
-.pagination-item {
+.pagination .pagination-item {
   display: block;
   width: 40px;
   height: 40px;
@@ -639,11 +639,11 @@ section {
   -webkit-border-radius: 50;
 }
 
-.pagination-item:hover {
+.pagination .pagination-item:hover {
   background: #dc3545;
 }
 
-.pagination-item.active {
+.pagination .pagination-item.active {
   background: #dc3545;
 }
 
