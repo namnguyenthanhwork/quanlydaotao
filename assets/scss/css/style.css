@@ -364,11 +364,15 @@ section {
   -o-border-radius: 10px 10px 0 0;
 }
 
-.notification .card-inner p {
+.notification .card-inner p:nth-child(3) {
   padding: 30px 10px;
   text-align: center;
   font-size: 18px;
   font-weight: 600;
+}
+
+.notification .card-inner p:nth-child(4) {
+  text-align: center;
 }
 
 .notification .card-inner .card-icon {

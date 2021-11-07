@@ -379,11 +379,15 @@ section {
                 -o-border-radius: 10px 10px 0 0;
             }
 
-            p {
+            p:nth-child(3) {
                 padding: 30px 10px;
                 text-align: center;
                 font-size: 18px;
                 font-weight: 600;
+            }
+            
+            p:nth-child(4) {
+                text-align: center;
             }
 
             .card-icon {

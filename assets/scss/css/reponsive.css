@@ -168,6 +168,9 @@
     font-size: 14px;
     padding: 30px 10px 20px;
   }
+  .notification .card-inner .member {
+    padding: 30px 10px 0 !important;
+  }
   .home {
     height: 80vh;
   }
